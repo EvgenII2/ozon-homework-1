@@ -119,15 +119,12 @@
       const queue = [getSum];
 
       Object.keys(data).forEach((key) => {
-        let value = data[key]; // data.counter, data.counter1, data.counter2
+        let value = data[key];
         Object.defineProperty(data, key, {
           get: function () {
-            // console.log("get", value);
-            // queue.push();
             return value;
           },
           set: function (newValue) {
-            // console.log("set", value);
             value = newValue;
             queue.forEach((fn) => fn());
           },
