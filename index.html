@@ -116,17 +116,21 @@
         sumEl.textContent = data.counter + data.step;
       };
 
-      const queue = [getSum];
+      let queue = [];
 
       Object.keys(data).forEach((key) => {
         let value = data[key];
         Object.defineProperty(data, key, {
           get: function () {
+            queue.push(getSum);
+            console.log(queue);
             return value;
           },
           set: function (newValue) {
             value = newValue;
             queue.forEach((fn) => fn());
+            queue = [];
+            console.log(queue);
           },
         });
       });
