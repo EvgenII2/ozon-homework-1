@@ -123,14 +123,12 @@
         Object.defineProperty(data, key, {
           get: function () {
             queue.push(getSum);
-            console.log(queue);
             return value;
           },
           set: function (newValue) {
             value = newValue;
             queue.forEach((fn) => fn());
             queue = [];
-            console.log(queue);
           },
         });
       });
