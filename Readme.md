@@ -19,4 +19,4 @@
 
 <img src="./image/example-1.png" width="300" alt="Сколько получится?"> <img src="./image/example-2.png" width="300" alt="Сколько получится?">
 
-## Ссылка[Ссылка](https://evgenii2.github.io/reactivity/)
+## [Ссылка](https://evgenii2.github.io/reactivity/)
