@@ -5,6 +5,8 @@ body {
   font-family: sans-serif;
   color: #001a34;
   height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
 }
 
 p {
@@ -40,4 +42,14 @@ p {
   justify-content: space-between;
   gap: 5px;
   margin-block-start: 1em;
+}
+
+#react-app {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.section-border {
+  border: 1px solid #001a34;
 }

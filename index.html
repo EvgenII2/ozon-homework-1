@@ -17,7 +17,7 @@
 </head>
 
 <body>
-  <section class="app vue-app">
+  <section class="app vue-app section-border">
     <h1>VUE</h1>
     <h2>How much will?</h2>
     <p>{{counter}} + {{step}}</p>
@@ -44,9 +44,8 @@
         +2
       </button>
     </div>
-  </section>
-  <hr />
-  <section class="app js-app">
+  </section>  
+  <section class="app js-app section-border">
     <h1>JS</h1>
     <h2>How much will?</h2>
     <p><span class="counter"></span> + <span class="step"></span></p>
@@ -63,11 +62,9 @@
       <button class="button minus-two-to-step">-2</button>
       <button class="button plus-two-to-step">+2</button>
     </div>
-  </section>
-  <hr />
-  <div id="react-app">
-  </div>
-  <hr />
+  </section>  
+  <div class="section-border" id="react-app">
+  </div>  
   <script>
     const $vue = new Vue({
       el: ".vue-app",
