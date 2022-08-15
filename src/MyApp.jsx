@@ -1,8 +1,8 @@
 function MyApp() {
   const [step, setStep] =
-    React.useState(1);
-  const [count, setCount] =
     React.useState(2);
+  const [count, setCount] =
+    React.useState(1);
   const [sum, setSum] =
     React.useState(0);
   React.useEffect(() => {
